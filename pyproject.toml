@@ -1,0 +1,42 @@
+# gcca
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ShP"
+description = "PySh: multiplatform shell commands for Python"
+version = "0.0.1"
+requires-python = ">=3.9"
+authors = [
+  { name = "Cristhian A. Gonzales Castillo", email = "yo@gcca.dev" }
+]
+dependencies = [
+  'typing_extensions; python_version<"3.10"'
+]
+license = {text = "GPLv3"}
+classifiers = [
+  "Development Status :: 2 - Alpha",
+  "Environment :: Web Environment",
+  "Environment :: Desktop Environment",
+  "Environment :: Server CLI Environment",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GPLv3 License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.optional-dependencies]
+dev = ["pre-commit==3.0.2"]
+
+[project.urls]
+homepage = "https://github.com/gcca/shpy"
+repository = "https://github.com/gcca/shpy"
+
+[tool.setuptools]
+packages = ["shpy"]
